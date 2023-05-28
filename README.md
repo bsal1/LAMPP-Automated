@@ -5,7 +5,7 @@
 
 ## **`1.Install Apache Server `**
 ```ssh
-sudo apt update && apt upgrade 
+sudo apt update && apt upgrade -y
 sudo apt install apache2 -y 
 ```
  ## **`2.Install MariaDB `**
