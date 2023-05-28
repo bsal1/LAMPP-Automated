@@ -21,6 +21,12 @@ sudo a2enmod php
 ```ssh
 echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/index.html
 sudo mv /var/www/html/index.html /var/www/html/index.php
+xdg-open http://localhost
+```
+## _Installing PHPMyAdmin_
+
+```ssh
+sudo apt install phpmyadmin
 
 ```
 
