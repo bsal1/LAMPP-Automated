@@ -14,9 +14,24 @@ sudo mysql_secure_installation
 
 ```ssh
 sudo apt install php
+sudo a2enmod php
+
+```
+## _Checking PHP configuration in Apache_
+```ssh
+echo "<?php phpinfo(); ?>" | sudo tee /var/www/html/index.html
+sudo mv /var/www/html/index.html /var/www/html/index.php
+
 ```
 
-## Installing PHPMyAdmin
+
+
+
+
+
+
+
+## _Installing PHPMyAdmin_
 ```ssh
 sudo apt install phpmyadmin
 xdg-open http://localhost/phpmyadmin
